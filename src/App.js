@@ -1,4 +1,21 @@
+import { useState } from "react"
+import React from "react"
+import Header from "./component/Header"
+import FeedbackList from "./component/FeedbackList"
+import FeedbackData from "./data/FeedbackData"
+
 const App = () => {
-    return <h1>Hello this is from APP JS</h1>
+    const [feedbackData, setFeedback] = useState(FeedbackData)
+    return (
+        <>
+            <Header text="Feedback-UI"/>
+            <div className="container">
+                <FeedbackList feedbackList={feedbackData}/>
+                
+            </div>
+            
+        </>
+
+    )
 }
 export default App
