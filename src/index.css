@@ -119,6 +119,9 @@ input:focus {
 }
 
 .feedback-stats {
+  max-width: 768px;
+  margin: auto;
+  padding: 0 40px;
   color: #fff;
   display: flex;
   justify-content: space-between;
